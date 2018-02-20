@@ -1,0 +1,70 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'svgicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basket:before {
+  content: "\e911";
+}
+.icon-loop:before {
+  content: "\e900";
+}
+.icon-dog:before {
+  content: "\e901";
+}
+.icon-anchor:before {
+  content: "\e902";
+}
+.icon-model:before {
+  content: "\e903";
+}
+.icon-decor:before {
+  content: "\e904";
+}
+.icon-arr-left:before {
+  content: "\e905";
+}
+.icon-house:before {
+  content: "\e906";
+  color: #cf9f9a;
+}
+.icon-medal:before {
+  content: "\e907";
+}
+.icon-odn:before {
+  content: "\e908";
+}
+.icon-phone:before {
+  content: "\e909";
+}
+.icon-procent:before {
+  content: "\e90a";
+}
+.icon-thumb:before {
+  content: "\e90b";
+}
+.icon-time:before {
+  content: "\e90c";
+}
+.icon-vk:before {
+  content: "\e90d";
+}
+.icon-arr-right:before {
+  content: "\e90e";
+}
+.icon-box:before {
+  content: "\e90f";
+}
+.icon-car:before {
+  content: "\e910";
+}

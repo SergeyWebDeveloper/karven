@@ -1,0 +1,87 @@
+h1,
+.h1
+	font-family: 'DejaVuSerifCondensed'
+	font-size: 32px
+	color: #1d1d1d
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3
+	font-weight: normal
+	text-transform: uppercase
+	color: #1d1d1d
+
+
+h2,
+.h2
+	font-size: 22px
+
+
+h3,
+.h3
+	font-size: 16px
+	color: #1d1d1d
+
+p
+	margin: 10px 0
+
+
+a
+	color: #ca202e
+	text-decoration: none
+	border-bottom: 1px dashed #ca202e
+	transition: all .3s ease
+	&:hover
+		border-bottom: none
+
+
+
+.btn
+	text-decoration: none
+	text-align: center
+	border: none
+	padding: 11px 5px
+	width: 171px
+	transition: all .3s ease
+	border-radius: 24px
+	transition: all .3s ease
+	position: relative
+	display: block
+	box-sizing: border-box
+	border: 1px solid transparent
+	&-red
+		background-color: #ca202e
+		color: #fff
+		&:after
+			content: ''
+			position: absolute
+			left: 5px
+			top: 5px
+			right: 5px
+			bottom: 5px
+			transition: all .3s ease
+			border: 1px dashed #ffffff
+			border-radius: 24px
+			box-sizing: border-box
+			opacity: 0
+		&:hover
+			&:after
+				opacity: 1
+		&:active
+			box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.18)
+	&-white
+		border: 1px solid #ca202e
+		color: #ca202e
+		&:hover
+			border: 1px dashed #ca202e
+		&:active
+			box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.18)
+
+
+
+
+
+

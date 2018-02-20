@@ -1,0 +1,345 @@
+@import "bourbon"
+
+.header__top
+	background-color: #eecfba
+	padding: 5px 0
+	a
+		text-decoration: none
+		border-bottom: none
+		color: #1f2d30
+		&:hover
+			text-decoration: underline
+
+
+.header__price
+	float: left
+
+.header__signin
+	float: right
+	a
+		position: relative
+		&+a
+			padding-left: 10px
+			&:before
+				content: ''
+				position: absolute
+				left: 2px
+				height: 70%
+				top: 50%
+				transform: translateY(-50%)
+				width: 1px
+				background: #383e3d
+
+
+.header__phone
+	a
+		color: #1f2d30
+		border-bottom: none
+		&+a
+			margin-left: 7px
+
+
+.basket__count
+	color: #6a6861
+	position: relative
+	padding: 5px 0
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		height: 1px
+		background-color: #bfbfbf
+
+
+.header__basket__link
+	border-bottom: none
+	position: relative
+	display: block
+	&:hover
+		.hidden__info__basket
+			transform: scale(1)
+			left: 0
+			opacity: 1
+
+
+.basket__text
+	display: block
+	padding: 5px 0
+	i,
+	span
+		display: inline-block
+		vertical-align: middle
+	i
+		font-size: 21px
+	
+
+.hidden__info__basket
+	border-radius: 5px
+	background-color: #ca202e
+	width: 100px
+	box-sizing: border-box
+	text-align: center
+	padding: 10px 5px
+	display: block
+	position: absolute
+	left: 0
+	right: 0
+	z-index: 16
+	top: 30px
+	opacity: 0
+	left: -150px
+	transition: all .3s ease
+	transform: scale(0)
+
+.show__basket,
+.show__save__basket
+	font-size: 13px
+	color: #fff
+	display: block
+	line-height: 18px
+	&:hover
+		text-decoration: underline
+
+.show__save__basket
+	margin-top: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 10px
+		right: 10px
+		top: -7px
+		border-bottom: 1px dashed #fff
+
+.header__information
+	padding: 15px 0 8px
+	border-bottom: 1px solid #cf9f9a
+
+
+.header__information__data
+	float: left
+
+
+.header__information__basket
+	float: right
+	margin-top: 15px
+
+
+.header__information__basket
+	.header__btn,
+	.header__basket
+		display: inline-block
+		vertical-align: middle
+
+
+.header__basket
+	margin-left: 35px
+
+
+
+
+.header__menu
+	// border-top: 1px solid #cf9f9a
+	position: relative
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+
+
+.header__menu__left
+	float: left
+	&>ul
+		&>li
+			&:first-child
+				a
+					font-size: 20px
+
+
+
+.header__menu__right
+	float: right
+	ul
+		margin-right: 15px
+	&>ul,
+	.header__seearch
+		display: inline-block
+		vertical-align: middle
+
+.header__seearch
+	cursor: pointer
+	&.active
+		i
+			color: #cf9f9a
+	i
+		font-size: 19px
+
+.header__menu__list
+	position: relative
+	z-index: 15
+	li
+		position: relative
+		&:hover
+			&>a
+				&:after
+					width: 100%
+			&>ul
+				transform: translateX(-50%) scale(1)
+	&>ul
+		ul
+			position: absolute
+			white-space: nowrap
+			left: 50%
+			border-radius: 5px
+			background-color: #eecfba
+			padding: 25px
+			margin: 0
+			top: 100%
+			list-style-type: none
+			overflow: hidden
+			column-count: 2
+			column-gap: 70px
+			transform: translateX(-50%) scale(0)
+			transition: all .3s ease
+			li
+				box-sizing: border-box
+				&+li
+					margin-top: 10px
+					font-size: 14px
+				a
+					border-bottom: none
+					color: #1f2d30
+					padding-left: 15px
+					position: relative
+					border-bottom: 1px solid transparent
+					&:hover
+						border-bottom: 1px solid #1f2d30
+					&:before
+						content: ''
+						position: absolute
+						left: 0
+						top: 8px
+						width: 4px
+						height: 4px
+						border-radius: 50%
+						background: #1f2d30
+		&>li
+			display: inline-block
+			vertical-align: middle
+			&>a
+				border-bottom: none
+				display: block
+				padding: 14px 0
+				position: relative
+				color: #1f2d30
+				// &:hover
+				// 	&:after
+				// 		width: 100%
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+					height: 2px
+					background-color: #eecfba
+					width: 0
+					transition: all .3s ease
+			&+li
+				margin-left: 30px
+
+
+.logo__link
+	border-bottom: none
+	display: block
+	position: relative
+	z-index: 4
+
+
+.header__logo
+	position: absolute
+	z-index: 2
+	left: 50%
+	transform: translateX(-50%)
+	&:after
+		content: ''
+		position: absolute
+		width: 130%
+		height: 86%
+		background: #fff
+		// background-color: red
+		border-radius: 50%
+		bottom: -20px
+		left: -15%
+		right: -15%
+
+
+
+
+
+
+.header__search
+	border-radius: 5px
+	background-color: #cf9f9a
+	padding: 30px 20px
+	z-index: 10
+	position: absolute
+	right: 0
+	left: 0
+	top: 100%
+	display: none
+
+
+.header__search__form
+	position: relative
+	input,
+	label
+		display: block
+		width: 100%
+
+
+.form__row
+	input
+		border-radius: 24px
+		background-color: #ffffff
+		box-sizing: border-box
+		padding: 15px 20px
+		border: none
+		outline: none
+	&.submit
+		position: absolute
+		right: 15px
+		top: 50%
+		transform: translateY(-50%)
+		label
+			font-size: 23px
+			color: #1f2d30
+			cursor: pointer
+		input
+			display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
