@@ -14,4 +14,10 @@ $(function(){
 		navText: ['<span class="icon-arr-left"></span>','<span class="icon-arr-right"></span>']
 	});
 
+	$('.novelties__wrapper').owlCarousel({
+		items: 4,
+		loop: true,
+		margin: 20
+	});
+
 });
