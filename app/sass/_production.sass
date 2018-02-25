@@ -1,0 +1,157 @@
+.production__main
+	box-shadow: 1px 7px 18px 1px rgba(0, 0, 0, 0.08)
+	background-color: #fff
+	padding: 40px 0
+
+
+
+
+.subtitle__page
+	max-width: 460px
+	margin: 0 auto
+	font-size: 14px
+	color: #6c6c6c
+	margin-top: 40px
+
+
+
+.production__main__column
+	float: left
+	width: 235px
+	&+.production__main__column
+		margin-left: 20px
+
+.small__height
+	height: 241px
+
+.big__height
+	height: 345px
+
+.production__main__item__wrapper
+	display: block
+	position: relative
+	height: 100%
+	border-bottom: none
+	padding: 20px
+	text-align: center
+	box-sizing: border-box
+	transition: all .1s ease
+	.icon-decor
+		color: #eecfba
+	.production__main__item__content
+		position: absolute
+		left: 20px
+		right: 20px
+	span
+		display: block
+		color: #fff
+		text-transform: uppercase
+		text-shadow: 0 0 19px rgba(0, 0, 0, 0.22)
+		line-height: 24px
+		min-height: 48px
+
+
+.production__main__item
+	background-size: cover
+	background-position: center
+	position: relative
+	&:hover
+		.production__main__item__wrapper
+			transform: scale(0)
+		.production__main__item__link
+			transform: scale(1)
+	&.top
+		.production__main__item__content
+			top: 90px
+	&.bottom
+		.production__main__item__content
+			bottom: 80px
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		height: 5px
+		top: -5px
+		background: #eecfba
+		border-radius: 4px 4px 0 0
+	&+.production__main__item
+		margin-top: 30px
+
+
+.production__main__wrapper
+	margin-top: 45px
+	padding-bottom: 40px
+
+
+.production__main__item__link
+	position: absolute
+	transform: scale(0)
+	transition: all .3s ease
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	border-radius: 0 0 4px 4px
+	background-color: #eecfba
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		text-align: center
+		left: 0
+		right: 0
+	li
+		&+li
+			margin-top: 5px
+	a
+		border-bottom: none
+		color: #5b4444
+		transition: all .3s ease
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			height: 1px
+			background: #5b4444
+		&:hover
+			color: #ca202e
+			&:after
+				background: #ca202e
+
+.production__main__item__wrapper
+	background-size: cover
+	background-position: center
+
+
+.production__main__bottom__text
+	p
+		color: #1d1d1d
+
+
+.see__more__btn
+	text-align: center
+	margin-bottom: 30px
+	.btn
+		display: inline-block
+		width: 217px
+	
+
+.advantages__main__img
+	position: absolute
+
+
+
+
+
+
+
+
+
+

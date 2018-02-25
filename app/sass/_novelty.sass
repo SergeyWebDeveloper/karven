@@ -5,6 +5,9 @@
 	border-radius: 5px
 	border: 1px solid #eecfba
 	position: relative
+	&:hover
+		.slider__warning__registr
+			transform: scale(1)
 
 .noveltie__item__link
 	position: absolute
@@ -34,9 +37,23 @@
 
 .novelties__main
 	padding: 30px 0
+	background: url(../img/pattern.png) repeat
+	position: relative
+	margin-bottom: 50px
+	&:after
+		content: ''
+		position: absolute
+		bottom: -5px
+		left: 0
+		right: 0
+		width: 100%
+		background: url(../img/pattern2.png) repeat-x
+		height: 10px
 	.owl-dots
 		text-align: center
-		padding: 15px 0
+		width: 120px
+		margin: 0 auto
+		// padding: 15px 0
 	.owl-dot
 		width: 13px
 		height: 13px
@@ -69,6 +86,66 @@
 .novelties__wrapper
 	margin: 45px 0
 
+
+.slider__warning__registr
+	position: absolute
+	top: 98%
+	width: 170px
+	margin: 0 auto
+	left: 0
+	right: 0
+	border-radius: 5px
+	background-color: #ca202e
+	color: #fff
+	padding: 10px 5px
+	box-sizing: border-box
+	font-size: 13px
+	z-index: 5
+	transform: scale(0)
+	transition: all .3s ease
+
+.slider__warning__text
+	display: block
+	text-align: center
+	line-height: 18px
+	
+
+
+
+.slider__warning__navigation
+	display: block
+	text-align: center
+	margin-top: 10px
+	position: relative
+	z-index: 10
+	.signin,
+	.registration
+		color: #fff
+		border-bottom: none
+		text-decoration: underline
+		position: relative
+	.signin
+		position: relative
+		margin-right: 15px
+		&:after
+			content: ''
+			position: absolute
+			right: -10px
+			height: 80%
+			top: 10%
+			bottom: 10%
+			width: 1px
+			background: #fff
+
+
+.novelties__wrapper
+	margin: 45px 0 0
+	.owl-dots
+		margin-top: -50px
+		position: relative
+		z-index: 1
+	.owl-stage-outer
+		padding-bottom: 90px
 
 
 

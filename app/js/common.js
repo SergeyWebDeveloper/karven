@@ -17,7 +17,8 @@ $(function(){
 	$('.novelties__wrapper').owlCarousel({
 		items: 4,
 		loop: true,
-		margin: 20
+		margin: 20,
+		mouseDrag: false
 	});
 
 });
