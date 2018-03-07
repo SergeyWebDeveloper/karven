@@ -3,43 +3,476 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1050px)
 	/**/
+	body
+		font-size: 14px
+		min-width: 320px
+	img
+		max-width: 100%
+		height: auto
+	.container
+		width: 100%
+		padding: 0 10px
+		box-sizing: border-box
+
+	.header__menu__left
+		&>ul
+			display: none
+	.header__menu__right
+		&>ul
+			display: none
+
+	.header__menu__list
+		padding: 10px 0
+
+	// .header__basket
+	// 	display: none !important
+
+	.header__logo
+		// width: 22%
+		width: 165px
+		top: 35px
+		&:after
+			left: -20%
+			right: -20%
+			width: 140%
+			height: 100%
+
+	.header__phone,
+	.header__btn
+		font-size: 14px
+
+	.header__btn
+		.btn
+			width: 143px
+
+	.slider__main
+		height: 480px
+
+	.slider__item__title
+		margin-bottom: 30px
+		p
+			font-size: 18px
+
+	.slider__item__diskount
+		font-size: 56px
+		&:before
+			font-size: 24px
+			bottom: auto
+			top: -25px
+
+	.slider__item__btn
+		margin-top: 15px
+
+	.slider__main__wrapper
+		.owl-nav
+			width: 100%
+			top: 62%
+			.owl-prev
+				left: 15px
+			.owl-next
+				right: 15px
+
+	.rectangle__top,
+	.rectangle__bottom
+		display: none
+
+	.title__page
+		.h4
+			font-size: 28px
+
+	.novelties__wrapper
+		.owl-dots
+			position: absolute
+			width: 100%
+			z-index: -1
+
+	.production__main__wrapper
+		.production__main__column
+			&:last-child
+				display: none
+
+	.production__main__column
+		width: 31.5%
+		&+.production__main__column
+			margin-left: 2.5%
+
+	.advantages__main
+		&:after
+			display: none
+
+	.advantages__main__img
+		width: 34%
+		top: 43%
+		left: 48%
+		transform: translate(-50%,-50%)
+	
+	.advantages__main__left,
+	.advantages__main__right
+		width: 47%
+
+	.advantages__main__item
+		font-size: 14px
+		&.personal
+			width: 290px
+		&.delivery
+			width: 250px
+		&.price
+			width: 240px
+		&.model
+			width: 290px
+		&.quality
+			width: 300px
+		&.zayavka
+			width: 250px
+		&.minimum
+			width: 235px
+		&.zakaz
+			width: 275px
+
+	
+	.consultation__main
+		height: 275px
+
+	.advantages__main__item
+		.img__wrap
+			width: 68px
+			height: 68px
+			i
+				font-size: 30px
+
+	.politics__confid
+		margin-top: 15px
+
+	.form__consultation__wrapper
+		text-align: center
+		margin: 30px 0
+
+	.form__block__inline
+		&+.form__block__inline
+			margin-left: 1%
+		width: 36%
+		&.btn__send
+			width: 167px
+			.btn
+				padding-top: 11px
+				padding-bottom: 11px
+		input
+			padding-top: 11px
+			padding-bottom: 11px
+
+	.consultation__main
+		.subtitle__page
+			margin-top: 15px
+
+	.footer__logo__info
+		display: none
+
+	.footer__data
+		width: 28%
+
+	.footer__menu
+		width: 71%
+		li
+			font-size: 14px
+			width: 33%
+
+	.footer__data
+		.btn
+			font-size: 14px
+			width: 158px
+			padding-top: 7px
+			padding-bottom: 7px
+
+	.footer__data__phone
+		a
+			font-size: 20px
+
+	.footer__data__place
+		font-size: 14px
+
+	.footer__data
+		border-left: 1px solid rgba(248, 248, 248, .22)
+	
+	.mobile__copy__info
+		display: block
+		float: left
+		width: 100%
+		margin-top: 20px
+		text-align: center
+		p
+			font-size: 12px
+			color: #adadad
+		p,
+		.social__footer
+			display: inline-block
+			vertical-align: middle
+			margin: 0
+		.social__footer
+			margin-left: 20px
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+	.footer__politics
+		padding: 10px 0
+		a
+			font-size: 14px
+
+	.social__footer
+		a
+			font-size: 19px
+
+	.mobile__copy__info
+		padding-bottom: 10px
+
+	.anchor
+		right: 2%
+
+	footer
+		padding-top: 30px
+
+	.consultation__main
+		.subtitle__page
+			font-size: 14px
+
+	.advantages__main__left .advantages__main__item,
+	.advantages__main__right .advantages__main__item
+		margin-bottom: 30px
+	
+	.advantages__main__wrapper
+		margin-top: 30px
+
+	.production__main
+		padding-bottom: 25px
+
+	.see__more__btn
+		.btn
+			width: 181px
+			font-size: 14px
+			padding-top: 7px
+			padding-bottom: 7px
+
+	.production__main__item__content
+		&>span
+			font-size: 16px
+	
+	.novelties__wrapper
+		margin-top: 20px
+
+
+	.btn
+		width: 140px
+		padding-top: 8px
+		padding-bottom: 8px
+
+	.slider__item__btn
+		.btn
+			width: 183px
+
+	.hidden__info__basket
+		left: auto
+		right: 0
+
+	.header__basket__link:hover
+		.hidden__info__basket
+			left: auto
+
+	.header__menu
+		z-index: 1
+
+	.header__logo
+		&:after
+			bottom: -10px
+			width: 120%
+			left: -10%
+			right: -10%
+
+	.header__information__basket
+		.header__basket
+			display: none
+	
+	.header__mobile__menu
+		position: absolute
+		left: 0
+		right: 0
+		background-color: #eecfba
+		// box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4)
+		box-sizing: border-box
+		padding: 20px 40px
+		top: 100%
+		.name__menu__title
+			margin: 0
+		ul
+			overflow: hidden
+			margin-top: 10px
+			a
+				border-bottom: none
+				color: #1f2d30
+		li
+			position: relative
+			padding-left: 15px
+			float: left
+			width: 33.3%
+			box-sizing: border-box
+			margin-bottom: 7px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 10px
+				width: 3px
+				height: 3px
+				border-radius: 50%
+				background-color: #1f2d30
+
+	.header__mobile__menu__list
+		a
+			border-bottom: none
+
+	.mobile__left__menu
+		display: block
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 760px)
+	.header__mobile__menu
+		padding: 5px 10px 25px
+		ul
+			column-count: 2
+		li
+			width: 100%
+			float: none
+			line-height: 17px
+			margin-bottom: 15px
+
+	.header__search
+		padding: 20px 10px
+		border-radius: 0
+
+	.header__seearch
+		top: 3px
+		position: relative
+
+	.subtitle__page
+		margin-top: 15px
+
+	.production__main__wrapper
+		margin-top: 20px
+
+	.title__page
+		.h4
+			font-size: 22px
+
+	.production__main__column
+		width: 48%
+		&+.production__main__column
+			margin-left: 4%
+		&:nth-child(3)
+			display: none
+
+	.small__height
+		height: 154px
+
+	.big__height
+		height: 219px
+
+	.production__main__item
+		&+.production__main__item
+			margin-top: 10px
+
+	.production__main__item__wrapper
+		.icon-decor
+			font-size: 10px
+
+	.production__main__item
+		&.top
+			.production__main__item__content
+				top: 35px
+		&.bottom
+			.production__main__item__content
+				bottom: 45px
+
+	.production__main__item__link
+		ul
+			left: 15px
+			right: 15px
+		a
+			text-decoration: underline
+			&:after
+				display: none
+
+	.hidden__text
+		display: none
+
+	.see__more
+		display: block
+		&:hover
+			border-color: #fff
+
+	.production__main__wrapper
+		padding-bottom: 25px
+
+	.production__main
+		padding-bottom: 35px
 	
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
+	.see__more__btn
+		margin-bottom: 15px
+
+	.production__main__bottom__text
+		p
+			margin: 5px 0
+
+	.subtitle__page
+		text-align: left
+
+	.advantages__main__img
+		display: none
+
+	.advantages__main__left,
+	.advantages__main__right
+		width: 100%
+		.advantages__main__item
+			width: 100%
+
+	.advantages__main__left
+		.advantages__main__item
+			.img__wrap,
+			.text
+				float: none
+				top: auto
+
+	.advantages__main__left .advantages__main__item,
+	.advantages__main__right .advantages__main__item
+		height: auto
+		margin-bottom: 20px
+
+	.advantages__main__right
+		.advantages__main__item
+			.img__wrap,
+			.text
+				float: none
+				text-align: left
+
+	
+	.advantages__main__item
+		.text
+			width: 76%
+			box-sizing: border-box
+			padding-left: 10px
+		p
+			br
+				display: none
+
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.novelties__wrapper
+		.owl-dots
+			margin-top: -10px
+		.owl-stage-outer
+			padding-bottom: 35px
 
 
 /* Custom, iPhone Retina */

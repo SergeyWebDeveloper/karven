@@ -1,22 +1,63 @@
 .advantages__main
-	padding: 40px 0
+	padding: 10px 0
 	background: rgba(233, 233, 235, .38)
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: 211px
+		height: 572px
+		border-radius: 5px
+		background-color: #e9e9eb
+		opacity: 0.35
+		right: 60px
+		top: -150px
+		z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		background: url(../img/blue__pattern.png) repeat
+		height: 10px
+		top: -10px
 	.subtitle__page
 		max-width: 700px
 
 
 .advantages__main__wrapper
 	position: relative
+	margin-top: 65px
 
 
 .advantages__main__img
 	position: absolute
-	left: 45%
+	left: 48%
+	top: 20px
 	transform: translateX(-50%)
 
 
 .advantages__main__item
 	color: #b46c64
+	&.personal
+		width: 350px
+	&.delivery
+		width: 280px
+	&.price
+		width: 285px
+		.text
+			position: relative
+			top: 15px
+	&.model
+		width: 360px
+	&.quality
+		width: 375px
+	&.zayavka
+		width: 310px
+	&.minimum
+		width: 292px
+	&.zakaz
+		width: 385px
 	.text
 		p
 			line-height: 24px
@@ -43,11 +84,65 @@
 .advantages__main__left,
 .advantages__main__right
 	width: 380px
+	.img__wrap
+		transition: all .3s ease
+		&:hover
+			background-color: #b56e66
+			i
+				color: #fff
+	.advantages__main__item
+		height: 90px
+		margin-bottom: 50px
+		p
+			margin-top: 0
+
 
 .advantages__main__left
 	float: left
+	.advantages__main__item
+		.img__wrap
+			float: right
+		.text
+			float: left
 
 .advantages__main__right
 	float: right
+	.advantages__main__item
+		float: right
+		.img__wrap
+			float: left
+		.text
+			float: right
+			text-align: right
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

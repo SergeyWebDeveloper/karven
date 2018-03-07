@@ -30,6 +30,8 @@
 	margin-bottom: 15px
 	.btn
 		display: inline-block
+		&:hover
+			border-bottom: 1px solid #ca202e
 
 .noveltie__item__content
 	padding: 10px
@@ -39,16 +41,19 @@
 	padding: 30px 0
 	background: url(../img/pattern.png) repeat
 	position: relative
-	margin-bottom: 50px
+	margin-bottom: 20px
+	margin-top: -20px
+	position: relative
+	box-shadow: 0 5px 25px 10px rgba(0,0,0,.1)
 	&:after
 		content: ''
 		position: absolute
-		bottom: -5px
+		bottom: -15px
 		left: 0
 		right: 0
 		width: 100%
-		background: url(../img/pattern2.png) repeat-x
-		height: 10px
+		background: url(../img/white__pattern.png) repeat
+		height: 15px
 	.owl-dots
 		text-align: center
 		width: 120px
@@ -82,9 +87,6 @@
 .noveltie__item__price
 	margin: 20px 0
 
-
-.novelties__wrapper
-	margin: 45px 0
 
 
 .slider__warning__registr
@@ -139,9 +141,9 @@
 
 
 .novelties__wrapper
-	margin: 45px 0 0
+	margin: 40px 0 0
 	.owl-dots
-		margin-top: -50px
+		margin-top: -60px
 		position: relative
 		z-index: 1
 	.owl-stage-outer

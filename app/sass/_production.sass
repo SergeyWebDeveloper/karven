@@ -1,9 +1,64 @@
 .production__main
-	box-shadow: 1px 7px 18px 1px rgba(0, 0, 0, 0.08)
+	// box-shadow: 1px 7px 18px 1px rgba(0, 0, 0, 0.08)
 	background-color: #fff
-	padding: 40px 0
+	padding: 20px 0 40px
+	position: relative
 
 
+.rectangle__top
+	position: absolute
+	left: 0
+	width: 163px
+	height: 572px
+	border-radius: 5px
+	background-color: #eecfba
+	opacity: 0.35
+	top: -150px
+	&:after
+		content: ''
+		position: absolute
+		width: 211px
+		height: 290px
+		border-radius: 5px
+		background-color: rgba(233, 233, 235, .5)
+		left: 50px
+		bottom: -180px
+	&:before
+		content: ''
+		position: absolute
+		border: 2px dashed #af5f56
+		opacity: 0.35
+		border-radius: 5px
+		right: 20px
+		top: 20px
+		bottom: 20px
+		width: 100%
+
+
+
+.rectangle__bottom
+	position: absolute
+	width: 140px
+	height: 290px
+	border-radius: 5px
+	background-color: #eecfba
+	opacity: 0.35
+	right: 0
+	bottom: 70px
+	z-index: 1
+	&:after
+		content: ''
+		position: absolute
+		border-radius: 5px
+		border: 2px dashed #af5f56
+		opacity: 0.35
+		position: absolute
+		left: 20px
+		top: 20px
+		bottom: 20px
+		width: 120px
+		border-right: none
+		box-sizing: border-box		
 
 
 .subtitle__page
@@ -11,7 +66,7 @@
 	margin: 0 auto
 	font-size: 14px
 	color: #6c6c6c
-	margin-top: 40px
+	margin-top: 30px
 
 
 
@@ -62,10 +117,10 @@
 			transform: scale(1)
 	&.top
 		.production__main__item__content
-			top: 90px
+			top: 78px
 	&.bottom
 		.production__main__item__content
-			bottom: 80px
+			bottom: 93px
 	&:before
 		content: ''
 		position: absolute
@@ -133,6 +188,7 @@
 .production__main__bottom__text
 	p
 		color: #1d1d1d
+		margin: 25px 0
 
 
 .see__more__btn
