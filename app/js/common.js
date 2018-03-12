@@ -24,7 +24,7 @@ $(function(){
 			0: {
 				items: 1,
 				mouseDrag: true,
-				stagePadding: 20,
+				stagePadding: 30,
 				margin: 50
 			},
 			490: {

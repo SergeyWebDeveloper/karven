@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'svgicon';
-  src:  url('fonts/svgicon.eot?inzsuw');
-  src:  url('fonts/svgicon.eot?inzsuw#iefix') format('embedded-opentype'),
-    url('fonts/svgicon.ttf?inzsuw') format('truetype'),
-    url('fonts/svgicon.woff?inzsuw') format('woff'),
-    url('fonts/svgicon.svg?inzsuw#svgicon') format('svg');
+  src:  url('fonts/svgicon.eot?bgumjt');
+  src:  url('fonts/svgicon.eot?bgumjt#iefix') format('embedded-opentype'),
+    url('fonts/svgicon.ttf?bgumjt') format('truetype'),
+    url('fonts/svgicon.woff?bgumjt') format('woff'),
+    url('fonts/svgicon.svg?bgumjt#svgicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tel:before {
+  content: "\e914";
+  color: #ca202e;
+}
+.icon-zamok:before {
+  content: "\e915";
+}
+.icon-signin:before {
+  content: "\e916";
+}
 .icon-close:before {
   content: "\e912";
 }
